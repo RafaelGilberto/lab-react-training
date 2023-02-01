@@ -1,0 +1,9 @@
+.likeButton {
+  padding: 20px 40px 20px 40px;
+  margin: 10px;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 600;
+  font-size: large;
+  cursor: pointer;
+}

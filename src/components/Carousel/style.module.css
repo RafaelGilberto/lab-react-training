@@ -1,0 +1,9 @@
+.imgFeature {
+  width: 300px;
+  margin: 10px;
+}
+.buttonFeatures {
+  padding: 20px 40px 20px 40px;
+  margin: 10px;
+  cursor: pointer;
+}

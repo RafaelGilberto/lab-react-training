@@ -6,7 +6,7 @@ export function CreditCard(props) {
   let image;
   let altText = 'card type';
   let cardNumber = props.number.slice(12, 16);
-  if (props.type == 'Visa') {
+  if (props.type === 'Visa') {
     image = visa;
   } else {
     image = masterCard;
