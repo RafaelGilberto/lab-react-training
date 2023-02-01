@@ -1,0 +1,26 @@
+.imageSize {
+  margin-top: 10px;
+  width: 70px;
+  margin-left: 300px;
+}
+.boxCard {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 10px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+.validade {
+  margin-left: 10px;
+  margin-bottom: -10px;
+  margin-top: 10px;
+}
+.owner {
+  margin-left: 10px;
+}
+.number {
+  text-align: center;
+  margin-top: 40px;
+}
