@@ -2,18 +2,19 @@ import style from './style.module.css';
 import { useState } from 'react';
 
 export function Carousel(props) {
-  const [pic, setPic] = useState(props.images[0]);
+  //const [pic, setPic] = useState(props.images[0]);
   const altText = 'Person picture';
-  let count = 0;
+  const [count, setCount] = useState(0);
+  const [pic, setPic] = useState(props.images[count]);
   return (
     <div>
       <img src={pic} alt={altText} className={style.imgFeature} />
       <div>
         <button
           onClick={() => {
-            count--;
-            if (count === -1) {
-              count = 3;
+            setCount(count - 1);
+            if (count === 0) {
+              setCount(3);
             }
             setPic(props.images[count]);
           }}
@@ -23,9 +24,9 @@ export function Carousel(props) {
         </button>
         <button
           onClick={() => {
-            count++;
+            setCount(count + 1);
             if (count === 3) {
-              count = 0;
+              setCount(0);
             }
             setPic(props.images[count]);
           }}
